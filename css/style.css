@@ -63,6 +63,26 @@ body {
   color: #333333;
 }
 
+.search__input::-webkit-input-placeholder {
+  color: #333333;
+}
+
+.search__input::-moz-placeholder {
+  color: #333333;
+}
+
+.search__input:-ms-input-placeholder {
+  color: #333333;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #333333;
+}
+
+.search__input::placeholder {
+  color: #333333;
+}
+
 .search__button {
   position: absolute;
   top: 0;
