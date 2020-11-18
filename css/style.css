@@ -13,6 +13,10 @@ body {
   margin: auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 .header {
   background-color: #ffffff;
 }
