@@ -42,13 +42,13 @@ img {
   padding-bottom: 40px;
 }
 
+.navbar-top__menu-button {
+  display: none;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
-}
-
-.navbar-top__menu-button {
-  display: none;
 }
 
 .navbar-bottom {
@@ -529,7 +529,6 @@ template {
     padding-bottom: 30px;
   }
   .navbar__search {
-    max-width: 340px;
     margin-left: auto;
   }
   .navbar-menu {
@@ -539,6 +538,9 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 
@@ -570,6 +572,7 @@ template {
             align-items: center;
     width: 16px;
     height: 11px;
+    padding: 0;
     border: none;
     background-color: #ffffff;
   }
