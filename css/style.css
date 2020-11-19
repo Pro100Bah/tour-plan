@@ -588,4 +588,10 @@ img {
     background-color: #333333;
   }
 }
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
