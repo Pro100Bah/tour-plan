@@ -601,9 +601,17 @@ img {
 }
 
 .stars {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
+}
+
+.stars__image:not(:last-child) {
+  margin-right: 2px;
 }
 
 .offer {
@@ -639,6 +647,12 @@ img {
   line-height: 18px;
 }
 
+.rating-small {
+  margin-left: -4px;
+  font-size: 10px;
+  line-height: 13px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -672,47 +686,10 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
-    max-width: 680px;
     width: 92%;
   }
-  .stars {
-    -webkit-flex-basis: auto;
-        -ms-flex-preferred-size: auto;
-            flex-basis: auto;
-  }
-  .hotel-name {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-  }
-  .hotel-wrapper {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .hotel-info__text {
-    width: 100%;
-  }
-  .hotel-info__name {
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-  .hotel-info__rating {
-    display: none;
-  }
-  .hotel-info__offer {
-    -webkit-box-ordinal-group: 0;
-    -webkit-order: -1;
-        -ms-flex-order: -1;
-            order: -1;
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 576px) {
   .logo {
     width: 99px;
   }
@@ -747,6 +724,48 @@ img {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .stars {
+    -webkit-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+  }
+  .hotel {
+    padding-top: 0;
+  }
+  .hotel-info__text {
+    width: 100%;
+  }
+  .hotel-info__rating {
+    display: none;
+  }
+  .hotel-name {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+  .hotel-wrapper {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hotel-info__name {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .hotel-info__offer {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 92%;
   }
 }
 

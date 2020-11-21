@@ -25,7 +25,10 @@
     font-size: 12px
     line-height: 15px
 .stars
+  display: flex
   flex-basis: 100%
+  &__image:not(:last-child)
+    margin-right: 2px
 .offer
   padding: 4px 9px
   font-weight: 600
@@ -49,3 +52,7 @@
     font-weight: bold
     font-size: 14px
     line-height: 18px
+  &-small
+    margin-left: -4px
+    font-size: 10px
+    line-height: 13px
