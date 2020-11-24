@@ -888,7 +888,7 @@ img {
   height: 213px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  background-color: #1aff1a;
+  background-color: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
 }
 
 @media screen and (max-width: 1200px) {
