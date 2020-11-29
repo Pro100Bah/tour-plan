@@ -631,8 +631,9 @@ img {
 }
 
 .hotel-slider {
-  width: 728px;
+  max-width: 728px;
   height: 450px;
+  margin-left: 0 !important;
 }
 
 .hotel-slider__item {
@@ -903,7 +904,7 @@ img {
 
 .newsletter {
   position: relative;
-  padding: 98px 0 87px;
+  padding: 80px 0 68px;
   background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1003,6 +1004,7 @@ img {
 }
 
 .reviews__title {
+  margin-top: 0;
   margin-bottom: 70px;
   font-weight: bold;
   font-size: 36px;
@@ -1058,7 +1060,7 @@ img {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 46%;
   z-index: 12;
   width: 30px;
   height: 30px;
@@ -1066,19 +1068,19 @@ img {
   background-repeat: no-repeat;
   -webkit-background-size: 10px 10px;
           background-size: 10px;
-  -webkit-transform: translateY(-50px);
-      -ms-transform: translateY(-50px);
-          transform: translateY(-50px);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .reviews-slider__button--prev {
-  left: 0;
+  left: 18px;
   background-image: url(../img/arrow-prev-secondary.svg);
   background-position: center;
 }
 
 .reviews-slider__button--next {
-  right: 0;
+  right: 17px;
   background-image: url(../img/arrow-next-secondary.svg);
   background-position: center;
 }
@@ -1139,6 +1141,8 @@ img {
 
 .reviews-slider__text {
   max-width: 537px;
+  max-height: 115px;
+  overflow-y: auto;
   margin: 0 auto;
   font-size: 12px;
   line-height: 160%;
@@ -1214,6 +1218,10 @@ img {
   }
   .reviews-slider__item {
     max-width: 579px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
   }
 }
 
@@ -1342,8 +1350,6 @@ img {
   }
   .reviews__title {
     margin-bottom: 50px;
-    font-size: 30px;
-    line-height: 38px;
   }
 }
 
@@ -1378,7 +1384,7 @@ img {
     margin-bottom: 37px;
   }
   .subscribe {
-    width: 100%;
+    width: 95%;
   }
   .reviews__title {
     max-width: 70%;
@@ -1386,11 +1392,14 @@ img {
     font-size: 18px;
     line-height: 23px;
   }
+  .reviews-slider__button {
+    top: 30px;
+  }
   .reviews-slider__button--prev {
-    left: 45%;
+    left: 41%;
   }
   .reviews-slider__button--next {
-    right: 45%;
+    right: 41%;
   }
 }
 
