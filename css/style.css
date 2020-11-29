@@ -1197,13 +1197,13 @@ img {
 }
 
 .card::before {
-  z-index: -1;
   position: absolute;
   content: '';
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+  z-index: -1;
   background: -webkit-linear-gradient(270.17deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
   background: -o-linear-gradient(270.17deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
   background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
@@ -1229,6 +1229,14 @@ img {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.card__title--block-1 {
+  width: 157px;
+}
+
+.card__title--block-2 {
+  width: 164px;
 }
 
 .card__button {
@@ -1332,6 +1340,9 @@ img {
   .card {
     width: 340px;
     height: 255px;
+  }
+  .card__title--block-3 {
+    width: 200px;
   }
 }
 
@@ -1514,6 +1525,11 @@ img {
   }
   .reviews-slider__button--next {
     right: 41%;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 37px;
   }
   .card {
     width: 100%;
