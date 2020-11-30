@@ -628,6 +628,7 @@ img {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 31px;
 }
 
 .hotel-slider {
@@ -989,12 +990,17 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  min-width: 65px;
+  width: 65px;
   height: 100%;
+  padding: 5px;
   border: none;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   color: #ffffff;
   background-color: #EC1F46;
 }
@@ -1311,6 +1317,7 @@ img {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-left: 0;
   }
   .hotel-slider {
     width: 100%;
