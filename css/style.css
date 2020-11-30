@@ -706,7 +706,7 @@ img {
           flex-basis: 100%;
 }
 
-.stars__image:not(:last-child) {
+.stars-image:not(:last-child) {
   margin-right: 2px;
 }
 
@@ -1585,6 +1585,9 @@ img {
   .newsletter-title__strong {
     font-size: 30px;
     line-height: 38px;
+  }
+  .reviews-slider__text {
+    max-height: 265px;
   }
 }
 /*# sourceMappingURL=style.css.map */
