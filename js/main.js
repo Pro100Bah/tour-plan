@@ -27,3 +27,9 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     pageUpDown: true,
   },
 });
+
+let newAnimation = new Motus.Animation({
+  $el: document.querySelector(".newsletter"),
+  keyframes: [{ backgroundPositionY: 90 }, { backgroundPositionY: 20 }],
+});
+Motus.addAnimation(newAnimation);
