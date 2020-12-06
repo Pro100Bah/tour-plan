@@ -121,9 +121,42 @@
     width: 92%
   .logo
     width: 99px
+  body
+    padding-top: 78px
   .navbar
-    &__search, &-menu, &__user
+    &--mobile
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
+    &__user, &__search
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+    &-bottom
+      position: fixed
+      top: 78px
+      right: 0
+      bottom: 0
+      left: 0
       display: none
+      padding-top: 31px
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &_visible
+            display: block
   .menu
     &-button
       display: flex
@@ -139,6 +172,12 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        margin-top: 10px
+        margin-left: 0
+        color: $light
   .stars
     flex-basis: auto
   .hotel

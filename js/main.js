@@ -33,3 +33,11 @@ let newAnimation = new Motus.Animation({
   keyframes: [{ backgroundPositionY: 90 }, { backgroundPositionY: 20 }],
 });
 Motus.addAnimation(newAnimation);
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке меню");
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
+});
